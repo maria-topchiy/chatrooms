@@ -1,0 +1,6 @@
+subscription memberJoined {
+    memberJoined {
+        id
+        username
+    }
+}

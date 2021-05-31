@@ -1,0 +1,13 @@
+mutation createMessage($text: String!) {
+    createMessage(text: $text){
+        id
+        room{
+            name
+        }
+        author{
+            id
+            username
+        }
+        text
+    }
+}

@@ -1,0 +1,10 @@
+subscription messageCreated {
+    messageCreated {
+        timestamp
+        author { 
+            id 
+            username 
+        }
+        text
+    }
+}

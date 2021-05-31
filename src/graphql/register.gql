@@ -1,0 +1,6 @@
+query register ($username: String!, $password: String!){
+    register(username: $username, password: $password) {
+        id
+        username
+    }
+}

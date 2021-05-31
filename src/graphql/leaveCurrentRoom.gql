@@ -1,0 +1,6 @@
+mutation leaveCurrentRoom {
+    leaveCurrentRoom{
+        id
+        name
+    }
+}

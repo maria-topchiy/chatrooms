@@ -1,0 +1,22 @@
+mutation deleteRoom($id: ID!) {
+    deleteRoom(id: $id) {
+        id
+        name
+        members {
+            id
+            username
+        }
+        owner {
+            id
+            username
+        }
+        lastMessages{
+            text
+            author{
+                id
+                username
+            }
+            timestamp
+        }
+    }
+}

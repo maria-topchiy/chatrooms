@@ -1,0 +1,22 @@
+mutation joinRoom ($roomId: ID!) {
+    joinRoom (roomId: $roomId) {
+        id
+        name
+        members {
+            id
+            username
+        }
+        owner {
+            id
+            username
+        }
+        lastMessages{
+            text
+            author{
+                id
+                username
+            }
+            timestamp
+        }
+    }
+}

@@ -1,0 +1,22 @@
+mutation updateRoom($id: ID!, $name: String!) {
+    updateRoom(id: $id, name: $name) {
+        id
+        name
+        members {
+            id
+            username
+        }
+        owner {
+            id
+            username
+        }
+        lastMessages{
+            text
+            author{
+                id
+                username
+            }
+            timestamp
+        }
+    }
+}

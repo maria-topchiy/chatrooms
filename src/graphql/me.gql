@@ -1,0 +1,11 @@
+query {
+    me {
+        id
+        username
+        timestamp
+        currentRoom {
+            id
+            name
+        }
+    }
+}
